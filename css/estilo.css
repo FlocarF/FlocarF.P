@@ -1,0 +1,274 @@
+*{
+
+
+}
+
+
+body{
+	
+	background: url(imagenes/background_cake1.jpg);
+	background-attachment: 100% 100%;
+	background-attachment: fixed;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: #FFFFFF;
+	width: 100%;  
+	
+}
+
+/* ------------------------- */
+/* Nosotros */
+/* ------------------------- */
+.nosotros {
+	margin-bottom: 60px;
+	color: black;
+}
+
+.subtitulo {
+	font-size: 20px;
+	color: var(--purple-dark);
+	font-family: 'Noto Serif', serif;
+	font-weight: 700;
+	z-index: 2;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.subtitulo span {
+	background-color: var(--gray-light);
+	padding: 0 15px;
+	z-index: 99;
+	position: relative;
+}
+
+.subtitulo::after {
+	content: "";
+	display: inline-block;
+	height: 2px;
+	width: 100%;
+	background: var(--purple-dark);
+	position: relative;
+	top: -29px;
+	z-index: 1;
+}
+
+.nosotros .titulo {
+	width: 70%;
+	font-size: 44px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+.nosotros .enlace {
+	display: inline-block;
+	margin-top: 40px;
+	color: var(--purple-light);
+	font-weight: 700;
+	border-bottom: 1px solid transparent;
+	transition: .3s ease all;
+}
+
+.nosotros .enlace:hover {
+	text-decoration: none;
+	letter-spacing: 3px;
+	border-bottom: 1px solid var(--purple-light);
+}
+
+
+
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+  color: white;
+}
+
+header{
+	background-color: #000000;
+	text-align: right;
+}
+header figure{
+	float: left;
+	margin-left:100px;
+}
+header figure img{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+header h1{
+	color: #f7f7f7;
+	float: left;
+	margin:7px 80px 0px 50px;
+	padding: 0px;
+	font-size: 1.6em;
+	display: block;
+}
+
+header nav ul{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	text-align: center;
+}
+header nav ul li{
+	display: inline-block;
+
+	height: 35px;
+	margin: 10px 0px 0px 0px;
+	width: 100%;
+
+	padding: 10px;
+
+}
+header nav ul li a{
+	text-decoration: none;
+	color: #f7f7f7;
+	font-weight: bold;
+	padding: 15px 25px;
+}
+
+section{
+	width: 100%;
+	display: inline-block;
+	background: #E0E4E5;
+	
+}
+
+
+
+/***********************************************************
+************************** SLIDER **************************
+***********************************************************/
+div#InicioAncho{
+	position: relative;
+	width: 100%;
+	display: none;
+	border:1px solid transparent;
+}
+
+div#InicioAncho #slider {
+	border-radius: 10px;
+	border: 2px solid #8A0868;
+	margin: 0 auto;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	min-height: 240px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+div#InicioAncho #slider div.elemento {
+	left:0;
+	position:absolute;
+	top:0;
+	width: 100%;
+}
+div#InicioAncho #slider img {
+	border:0;
+	margin:0;
+	padding:0;
+	width: 100%;
+}
+div#InicioAncho #slider a{
+	text-decoration: none;
+}
+div#InicioAncho #slider p.gancho {
+	color: #DF7401;
+	display: block;
+	font-size: 1.4em;
+	font-weight: bolder;
+	line-height: 25px;
+	position: absolute;
+	right: 1%;
+	text-shadow: 2px 2px 3px white, -2px -2px 3px white;
+	top: 5%;
+	width: 29%;
+}
+
+
+section div.news{
+	float: right;
+	width: 30%;
+	background-color: white;
+	border:1px solid black;
+	margin-right: 20px;
+	display: none;
+	border-radius: 10px;
+	padding-bottom: 20px;
+}
+
+section div.news h2{
+	text-align: center;
+
+}
+
+section div.news article.post{
+	width: 95%;
+	margin-left: 2%;
+	border-top: 2px solid #440A4E;
+	margin-top: 35px;
+}
+section div.news article.post figure{
+	float: left;
+	margin-top: 10px;
+}
+section div.news article.post figure img{
+	width: 70px;
+}
+section div.news article.post h3{
+	margin-left: 85px;
+}
+section div.news article.post p{
+	font-style: italic;
+	font-size: 0.8em;
+	text-align: justify;
+	margin: 5px 5% 20px 5%;
+}
+section div.news article.post video{
+	width: 90%;
+	margin: 0px 5%;
+}
+
+
+
+@media screen and (min-width: 480px){
+	header nav ul li{
+		width: 22%;
+		text-align: center;
+	}
+	
+}
+@media screen and (min-width: 767px){
+	header nav ul li{
+		width: 8%;
+		margin: 10px 0px 0px 0px;
+		text-align: center;
+	}
+	
+
+	section article.receta{
+		width: 40%;
+		margin: 50px 3% 20px 6%;
+	}
+
+	div#InicioAncho{
+		display: inline;
+	}
+}
+@media screen and (min-width: 950px){
+	
+	section article.receta{
+		width: 26%;
+		margin: 50px 1% 20px 5%;
+	}
+	section div.news{
+		display: inline;
+	}
+
+}
